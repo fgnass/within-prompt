@@ -13,8 +13,10 @@ in an empty folder and tell it:
 > Clone https://github.com/fgnass/within-prompt into `./spec`, read
 > `spec/PROMPT.md` and build what it describes in this folder.
 
-The agent will ask you to sign in to LinkedIn in a window it opens. It takes a
-while: let it work, and answer when it asks you something.
+The agent will ask you to sign in to LinkedIn in a window it opens. LinkedIn
+may ask you to confirm that sign-in with a code, as it does for any new device.
+It takes a while (about an hour in my test): let it work, and answer when it
+asks you something.
 
 ## What you get
 

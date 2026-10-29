@@ -69,6 +69,10 @@ anniversary).
 - It remembers what it has seen. LinkedIn only ever hands out part of what
   happened, so the app keeps what it learns locally (for about two weeks) and
   the tabs fill up the longer it runs. An empty tab says so honestly.
+- It is useful from the first refresh. Right after I sign in, every tab and
+  page shows what LinkedIn has to offer, not only what happens from then on.
+  Following catches most of what my connections post, not just the few posts
+  that one view of LinkedIn's feed happens to carry.
 - It stays quiet: no counters that do not matter, no animations that pull
   attention, no infinite scroll.
 - It looks like the reference screenshots: one narrow column, light, LinkedIn
@@ -88,7 +92,8 @@ anniversary).
   react, comment, post, message or connect on my behalf, not even once to "see
   if it works". If you need to test a write, stop and ask me to do it.
 - Every name, number and post in your own tests and screenshots stays on my
-  machine.
+  machine. When you look at the app, capture its own windows only, never my
+  whole screen.
 
 ## How to work
 
@@ -98,13 +103,19 @@ own logged-in session; what LinkedIn's own web app does is fair to look at.
 It has to be an app of its own, with its own window: not a browser tab, not a
 browser extension. Pick whatever stack you like for my operating system (for
 example Electron). Keep the LinkedIn session apart from the user interface:
-the interface itself never gets to see the session cookies. And keep the
-interface separate from the platform-specific part, so that the same interface
-could later run in an app on my phone.
+the interface itself never gets to see the session cookies. Only signing in
+and talking to LinkedIn may depend on the platform. Everything else (what is
+stored, how the tabs are put together, ranking, muting, what counts as new)
+belongs to the shared part, so that an app on my phone would only need a thin
+shell of its own.
 
 Work in loops: build something small that runs, look at it, compare it with the
 goals above and the reference screenshots, and improve the part that is
-furthest off. Check your work in the running app, not only in the code. Keep a
+furthest off. Check your work in the running app, not only in the code. A goal
+is reached when you have seen it work with my real data. If it rests on an
+assumption about LinkedIn (for example, that LinkedIn already filters something
+out), check the assumption, or ask me to help you check it. To find out whether
+a tab misses things, ask me which connections posted recently. Keep a
 short `PROGRESS.md` with what works, what does not yet, and what you learned
 about the data, so you can pick up again after a break.
 
