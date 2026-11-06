@@ -77,7 +77,8 @@ anniversary).
   attention, no infinite scroll.
 - It looks like the reference screenshots: one narrow column, light, LinkedIn
   blue as the only accent, system font. A dark mode that follows the system is
-  welcome.
+  welcome. Use the app icon from the repository below (`icon/icon.svg`, and
+  `icon/icon.png` at 1024 px).
 
 ## Hard rules
 
@@ -123,10 +124,17 @@ When you need me (to sign in, to confirm a write, or because something is
 unclear), ask. Otherwise keep going until the app does everything above. Then
 tell me how to start it.
 
-## Reference screenshots
+## Reference screenshots and icon
 
-The screenshots in `screens/` (made with made-up data) show what the result
-should look and feel like:
+The screenshots and the app icon are in https://github.com/fgnass/within-prompt.
+Before you start, download them into a `reference/` folder of the project, and
+look at each screenshot yourself. Use plain downloads (for example `curl`), so
+that nothing needs to be installed first. The raw files are at
+`https://raw.githubusercontent.com/fgnass/within-prompt/main/<path>`, where
+`<path>` is `icon/icon.svg`, `icon/icon.png` or `screens/<file>` below.
+
+The screenshots (made with made-up data) show what the result should look and
+feel like:
 
 1. `1-following.png`: the Following tab
 2. `2-react.png`: the reaction list, opened from the heart
