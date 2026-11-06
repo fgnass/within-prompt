@@ -9,14 +9,14 @@ I built myself a calm LinkedIn reader: only the people I actually know, a chrono
 | ![Following](screens/1-following.png)           | ![Popular with peers](screens/3-popular.png) |
 | ![A post with its comments](screens/4-post.png) | ![My posts](screens/5-my-posts.png)          |
 
-More screenshots in [`screens/`](screens).
+## A prompt instead of an app
 
-What I share here is not the app but the recipe for it, as an experiment. One
-reason is LinkedIn's terms: they do not allow what the app does, so I do not
-want to hand out a finished app. The other reason is that how someone uses
-LinkedIn is quite personal, and I want to keep my app simple. A prompt seems the
-better starting point: a coding agent builds the app from it, and you can shape
-it into the reader you want. Your build will look different in the details.
+LinkedIn's terms do not allow what the app does, so I do not want to hand out a
+finished app. Also, how someone uses LinkedIn is quite personal, and I want to
+keep my app simple. So I asked myself how I could still share something, and
+tried an experiment: the recipe instead of the app. It is a prompt, and a coding
+agent builds the app from it. You can change it into the reader you want, and
+your build will look different in the details anyway.
 
 The prompt asks for a desktop app for your operating system. It keeps the
 LinkedIn part apart from the rest, so that a phone app needs only a thin shell
